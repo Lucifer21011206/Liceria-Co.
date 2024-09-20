@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.logo img {
+    height: 65px;
+    width: 100px;
+    border-radius: 10px 10px 10px 20px;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav ul li {
+    margin-right: 40px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.shop-now-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('hero-banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+
+
+.hero-shop-now {
+    display: inline-block;
+    background-color: #ff6347;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Product Grid Section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.product:hover {
+    background-color: #ddd;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.add-to-cart-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    /* display: flexbox; */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.social-media {
+    border-radius: 20px 20px 20px 20px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.subscribe-btn {
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+}
